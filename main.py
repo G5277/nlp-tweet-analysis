@@ -44,5 +44,4 @@ tweet = pos_tweets[random.randint(0,5000)]
 # remove hyperlinks
 tweet2 = re.sub(r'https?://[^\s\n\r]+', '', tweet)
 # remove hashtags
-tweet2 = 
-
+tweet2 = re.sub(r'#','', tweet2)
